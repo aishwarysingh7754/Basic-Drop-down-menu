@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("https://wallpapercave.com/wp/1Odq43G.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: azure;
+
+}
+.menu-bar{
+    background-color: #111111;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    
+}
+.menu-bar ul li{
+    margin: 10px;
+    padding: 10px;
+    width: 120px;
+
+}
+.menu-bar ul li a{
+  color: bisque;
+  text-decoration: none;  
+  transition: background-color 0.5s;
+}
+.active, .menu-bar ul li:hover
+{
+    background-color: darkolivegreen;
+}
+.menu-bar .fa
+{
+    margin-right: 8px;      
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background-color: darkolivegreen;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    border-bottom: 1px dotted white;
+    width: 110px;
+    padding: 10px;
+    border-radius: 0;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+
+
